@@ -2,8 +2,6 @@ FROM debian:10
 RUN apt-get update
 RUN apt-get install -y software-properties-common curl nano zip unzip 
 
-# Fix all permissions
-RUN    chmod +x /start.sh
 
 WORKDIR /data
 ENV TZ=america/Halifax
